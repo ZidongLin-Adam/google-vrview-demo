@@ -1,0 +1,35 @@
+<!--
+	请不要轻易动vrview文件夹内的东西，那个就是google的vrview
+	详细见https://developers.google.com/vr/develop/web/vrview-web
+	https://developers.google.com/vr/discover/360-degree-media
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VR View</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<!--引用google的vr视频播放器-->
+	<script src="./vrview/build/vrview.js"></script>
+	<!--设置自定义的vr视频播放参数及控制-->
+	<script src="./scripts/vrplayer.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+
+	<div class="iframeRange">
+		<!--vr视频的放置位置，其设置请参考上面的/scripts/index.js-->
+		<div id='vrplayer'></div>
+		<!--vr视频的播放控制器，其设置请参考上面的/scripts/index.js-->
+		<div id="controls">
+			<div id="toggleplay" class="paused"></div>
+			<div id="time">00:00 | 00:00</div>
+			<input id="volumerange" type="range" min="0" max="100" value="100"/>
+			<div id="togglemute"></div>
+			<div id="togglefullscreen"></div>
+		</div>
+	</div>
+</body>
+</html>
