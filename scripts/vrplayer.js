@@ -32,7 +32,7 @@ function onVrViewLoad() {
     is_vr_off: false,
     //is_autopan_off: true,
     //default_yaw: 0,
-    //is_yaw_only: true,
+    is_yaw_only: false,
     loop: true,
     //hide_fullscreen_button: true,
     //volume: 0.4,
